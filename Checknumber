@@ -1,0 +1,19 @@
+package main
+
+import "fmt"
+
+func Checknumber(Str string) bool {
+	for _, v := range Str {
+		if v >= '0' && v <= '9' {
+			return true
+		}
+	}
+	return false
+}
+
+func main() {
+	fmt.Println(Checknumber("bodethomAS3"))
+	fmt.Println(Checknumber("bodethom!?As-"))
+}
+
+/* "Write a function that a string as an argument and returns (true) if the string contains any number otherwise return (false)")*/
